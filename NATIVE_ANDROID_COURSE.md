@@ -1,15 +1,48 @@
 # Native Android: Flutter Engineer to Advanced
 
-This is the course home. Keep this file open when choosing the next chapter.
+This is the course home. Keep this file open when choosing the next chapter. Start
+with [README.md](README.md) for setup and learning modes, and use
+[CODE_TOUR.md](CODE_TOUR.md) for the current runnable reference.
 
 The chapters are finished; the learning is not. Reading a chapter does not complete
 it. You advance only after building its lab, recording the experiment, and answering
-its exit gate without copying a complete solution.
+its exit gate in your own words.
+
+## Current runnable reference — Day 5
+
+The app currently demonstrates the material through **Day 5: State and
+Recomposition**. Follow this symbol path:
+
+```text
+MainActivity.onCreate → setContent → NativeAndroidLabTheme → DeveloperCard
+    → DayHeader / ExecutionTrace / LearnerSummary
+    → PracticeExperiment / ReadingPrompt
+```
+
+`PracticeExperiment` owns `practiceSessions` with `rememberSaveable` and
+`mutableIntStateOf`, keeping Day 5 state in the smallest sufficient owner. Day 7 will
+earn state hoisting and callbacks. Days 6–30 remain curriculum and are intentionally
+not implemented yet. Their missing ViewModel,
+Navigation, Room, networking, Hilt, WorkManager, offline-sync, Paging, performance,
+and release code is the planned learning work—not an incomplete hidden solution.
+
+## Choose a learning mode
+
+**Read-first:** verify the reference, follow [CODE_TOUR.md](CODE_TOUR.md), predict each
+symbol's responsibility before reading its body, inspect tests, then make one bounded
+change.
+
+**Build-first:** read the day's contract and exit gate, preserve a passing checkpoint,
+implement one thin slice, and inspect the completed reference only after your own
+attempt. From Day 6 onward, you create the implementation because advanced reference
+code is deliberately absent.
 
 ## Course contract
 
-- You write and debug the application code.
-- The book supplies mental models, contracts, failure experiments, hints, and checks.
+- You read, write, and debug application code; choose read-first or build-first per
+  session.
+- The book supplies mental models, contracts, failure experiments, hints, and checks;
+  the runnable app supplies the completed reference through Day 5 only.
 - Ask for `hint 1`, then `hint 2`, before asking for a complete solution.
 - Commit or otherwise preserve a working checkpoint before each destructive experiment.
 - Do not add an abstraction or dependency before its chapter creates a real need.
@@ -47,10 +80,11 @@ Never use `+`, `latest.release`, or a version copied blindly from an old article
 ## Daily ritual
 
 ```text
-Predict → make one change → build/test → observe → explain → checkpoint
+Orient → trace symbols → predict → make one change → build/test
+       → observe → explain → checkpoint
 ```
 
-Keep a short `LEARNING_LOG.md` in the project root. For every chapter record:
+Use [LEARNING_LOG.md](LEARNING_LOG.md). For every chapter record:
 
 - prediction;
 - actual result;
@@ -68,6 +102,9 @@ Keep a short `LEARNING_LOG.md` in the project root. For every chapter record:
 3. [Kotlin Survival Kit](DAY_03_CHAPTER_03.md)
 4. [Build a Compose Layout](DAY_04_CHAPTER_04.md)
 5. [State and Recomposition](DAY_05_CHAPTER_05.md)
+
+The runnable reference stops here. The remaining links are implementation contracts
+for future checkpoints.
 
 ### Book 2 — Android and UI foundations
 

@@ -1,3 +1,39 @@
 <resources>
-    <string name="app_name">NativeAndroidLab</string>
+    <string name="app_name">Native Android Lab</string>
+
+    <string name="day_stamp">DAY 05 · STATE &amp; RECOMPOSITION</string>
+    <string name="day_progress">05 / 30</string>
+    <string name="lab_title">From widget trees to runtime state.</string>
+    <string name="lab_subtitle">Read the path Android follows, then change one observable value.</string>
+
+    <string name="execution_trace">EXECUTION TRACE</string>
+    <string name="trace_state_write_title">State write</string>
+    <string name="trace_state_write_body">Complete session changes practiceSessions.</string>
+    <string name="trace_snapshot_title">Snapshot becomes stale</string>
+    <string name="trace_snapshot_body">Compose remembers which UI read the value.</string>
+    <string name="trace_recomposition_title">Affected scope runs</string>
+    <string name="trace_recomposition_body">The counter is described again with the new value.</string>
+
+    <string name="learner_context">LEARNER CONTEXT</string>
+    <plurals name="flutter_experience">
+        <item quantity="one">%1$d year of Flutter experience</item>
+        <item quantity="other">%1$d years of Flutter experience</item>
+    </plurals>
+    <string name="learning_native">Learning native Android from first principles</string>
+    <string name="learning_path">Flutter · Spring Boot → Kotlin · Compose</string>
+
+    <string name="live_experiment">LIVE EXPERIMENT</string>
+    <string name="practice_sessions">PRACTICE SESSIONS</string>
+    <string name="practice_sessions_count_description">Practice sessions: %1$d</string>
+    <string name="complete_session">Complete session</string>
+    <string name="reset">Reset</string>
+
+    <string name="try_next">TRY NEXT</string>
+    <string name="try_next_body">Predict the value, tap Complete twice, rotate the device, then explain what survived and why.</string>
+    <string name="flutter_bridge_label">FLUTTER BRIDGE</string>
+    <string name="flutter_bridge_body">setState(…) asks Flutter to rebuild. In Compose, assigning observable state invalidates the scopes that read it.</string>
+    <string name="read_code_label">READ THIS PATH</string>
+    <string name="read_code_path">MainActivity.onCreate → DeveloperCard → PracticeExperiment → practiceSessions</string>
+    <string name="exit_gate_label">EXIT GATE</string>
+    <string name="exit_gate_body">Explain recomposition, Activity recreation, remember, and rememberSaveable without translating every term into Flutter.</string>
 </resources>

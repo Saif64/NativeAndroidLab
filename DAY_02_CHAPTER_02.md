@@ -16,7 +16,7 @@ launcher icon
 Do not try to memorize every keyword. Your goal is to explain how Android reaches
 the text on the screen.
 
-## 1. Android does not start at `main()`'
+## 1. Android does not start at `main()`
 
 Flutter begins from a Dart `main()` that calls `runApp()`. Android applications are
 different: the Android system creates registered components and invokes their
@@ -131,4 +131,3 @@ Official references:
 
 - https://developer.android.com/guide/components/activities/intro-activities
 - https://developer.android.com/develop/ui/compose/mental-model
-

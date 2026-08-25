@@ -3,6 +3,11 @@
 Yesterday's UI depended only on function parameters. Today the button will change a
 value and Compose will redraw the affected UI.
 
+> **Current reference checkpoint:** the runnable app is complete through this chapter.
+> Use [CODE_TOUR.md](CODE_TOUR.md) for read-first study, or attempt the contract below
+> before tracing `DeveloperCard` into `PracticeExperiment` for build-first study.
+> Day 6 and later code is intentionally absent until you implement those chapters.
+
 ## The governing idea
 
 ```text
